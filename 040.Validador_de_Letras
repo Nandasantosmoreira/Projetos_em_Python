@@ -1,0 +1,10 @@
+#Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores ‘M’ ou ‘F’. Caso esteja errado, peça a digitação novamente até ter um valor correto.#
+print('Validador de Gênero')
+print('='*20)
+nome= str(input('Informe o nome: ')).strip().upper()
+sexo= str(input('Informe o gênero [F/M]: ')).strip().upper()
+while sexo != 'F' and 'M':
+    sexo= str(input('Gênero inválido. Informe o gênero [F/M]: ')).strip().upper()[0]
+print('{}, gênero registrado com sucesso! Obrigado(a)!'.format(nome, sexo))   
+ 
+

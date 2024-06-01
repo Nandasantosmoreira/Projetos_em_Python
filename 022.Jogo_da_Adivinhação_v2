@@ -1,0 +1,21 @@
+#Crie um jogo onde o computador vai “pensar” em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.#
+from random import randint
+from time import sleep
+computador = randint(0,10)
+print('Vou pensar em um número de 0 a 10 para você adivinhar')
+print('Processando...')
+sleep(2)
+tentativa= 0
+acertou= False
+while not acertou:
+    jogador= int(input('Digite o número que eu pensei: '))
+    tentativa+=1
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador < computador:
+            print('Mais... Tente mais uma vez!')
+        elif jogador > computador:
+            print('Menos...Tente mais uma vez!')
+print('PARABÉNS! Você acertou o número com {} tentativas!'.format(tentativa))                    
+

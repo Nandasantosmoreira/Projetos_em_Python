@@ -1,0 +1,7 @@
+#Faça um programa que calcule a soma entre todos os números que são múltiplos de três e que se encontram no intervalo de 1 até 500#
+s = cont = 0
+for c in range (1,501,2):
+    if not c%3:
+        cont+= 1
+        s+= c
+print('A soma dos {} números impares multiplus por 3 é: {}'.format(cont,s))

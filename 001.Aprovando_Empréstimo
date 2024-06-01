@@ -1,0 +1,12 @@
+print('Simulação de empréstimo para CASA PRÓPRIA')
+valor = float(input('Qual o valor da casa?:' ))
+salario = float(input('Qual seu salário bruto?:'))
+duracao = int(input('Em quantos anos deseja pagar?:'))
+prestacao = valor / (duracao * 12)
+minimo = salario * 30/100
+print('Para pagar uma casa de R${:.2f} em {} anos. a prestação será de {:.2f}'.format(valor,duracao,prestacao))
+if prestacao <= minimo:
+    print('Empréstimo APROVADO')
+else:
+    print('Empréstimo NEGADO')
+          

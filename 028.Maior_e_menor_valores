@@ -1,0 +1,18 @@
+tot = soma = maior = menor = media = 0
+continuar = 'S'
+while continuar == 'S':
+    numero = int(input('Digite um número: '))
+    soma += numero
+    tot += 1
+    if tot == 1:
+        maior = menor = numero
+    else:
+        if numero < menor:
+           menor = numero  
+        if numero > maior:
+            maior = numero     
+    continuar = str(input('Quer continuar? [S/N]: ')).upper().strip() [0]      
+media =  soma / tot
+print('''A média entre os {} digitados é: {}
+O maior valor digitado foi o {}
+O menor valor digitado foi o {}.'''.format(tot, media, maior, menor)) 

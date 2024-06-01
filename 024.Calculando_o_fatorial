@@ -1,0 +1,12 @@
+print('=>'*20)
+print('Descubra o fatorial')
+print('=>'*20)
+numero = int(input('Digite o número: '))
+fatorial = 1
+cont = numero
+while cont > 0:
+    print('{}'.format(cont), end='')
+    print(' X ' if cont > 1 else ' = ', end='')
+    fatorial*=cont
+    cont-=1
+print('{}'.format(fatorial))            

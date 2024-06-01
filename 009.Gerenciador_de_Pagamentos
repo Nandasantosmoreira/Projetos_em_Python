@@ -1,0 +1,20 @@
+#Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento#
+#à vista dinheiro/cheque: 10% de desconto**à vista no cartão: 5% de desconto**em até 2x no cartão: preço formal ** 3x ou mais no cartão: 20% de juros#
+print('Calculadora progressiva')
+valor= float(input('Qual o valor do produto: '))
+pagamento= int(input('''Escolha a forma de pagamento:
+[1] à vista dinheiro/cheque: 10% de desconto
+[2] à vista no cartão: 5% de desconto
+[3] em até 2x no cartão: preço formal 
+[4] 3x ou mais no cartão: 20% de juros
+Digite sua escolha:  '''))
+if pagamento == 1:
+    print(' O valor {:.2f} á vista dinheiro ou cheque, ficará: {:.2f}'.format(valor, valor - (valor *10/100)))
+elif pagamento == 2:
+    print(' O valor {:.2f} á vista no cartão, ficará: {:.2f}'.format(valor, valor - (valor *5/100)))
+elif pagamento == 3:
+    print('O valor {:.2f} em 2x no cartão, ficará sem acréscimo e em duas parcelas iguais: {:.2f}'.format(valor, valor/2 ))
+elif pagamento == 4:
+    print('O valor {:.2f} em 3x ou mais no cartão, com juros de 20%: {:.2f}'.format(valor,(valor*20/100))) 
+else:
+    print('Opção inválida, tente novamente.')      

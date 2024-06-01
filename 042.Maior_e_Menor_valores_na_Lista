@@ -1,0 +1,24 @@
+#Faça um programa que leia 5 valores numéricos e guarde-os em uma lista. No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.#
+num = []
+mai=men=0
+for i in range(0,5):
+   num.append(int(input(f'Digite o {i+1}° número: ')))
+   if i ==0:
+    mai=men= num[i]
+   else:
+       if num[i] > mai:
+           mai = num[i]
+       if num[i] < men:
+           men = num[i]        
+print('+'*40)
+print(f'Os números digitados foram: {num}')
+print(f'O maior número digitado foi o {mai} na posição ', end='')
+for i, n in enumerate(num):
+    if n == mai:
+        print(f'{i+1}!',end='')
+    if n == men: 
+       print(f'\nO menor número digitado foi o {min(num)} na posição ',end='')
+       print(f'{i+1}!',end='') 
+   
+
+

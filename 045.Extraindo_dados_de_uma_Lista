@@ -1,0 +1,20 @@
+# Crie um programa que vai ler vários números e colocar em uma lista.
+#Depois disso, mostre:#
+#A- Quantos números forma decrescente. B- A lista de valores, ordenada de forma decrescente. 
+#c-Se o valor 5 foi digitado e está ou não na lista.#
+numeros=[]
+while True:
+    numeros.append(int(input('Digite um número: ')))
+    continuar = str(input('Quer continuar? [S/N]: ')).upper().strip() [0]
+    if continuar == 'N':
+        break
+print(f'Foram digitados {len(numeros)} números')  
+numeros.sort(reverse=True)
+print(f'A ordem decrescente fica assim: {numeros}')  
+if 5 in numeros:
+     print(f'O número 5 foi digitado {numeros.count(5)} vez(es)')
+else:
+    print('O número 5 não foi digitado')
+
+
+

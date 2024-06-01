@@ -1,0 +1,16 @@
+print('Super progressão Aritmética')
+print('-='*15)
+primeiro= int(input('Digite o primeiro TERMO:'))
+razao = int(input('Digite a RAZÃO:'))
+termo = primeiro
+cont = 1
+total = 0
+mais = 10
+while mais != 0:
+    while cont <= total:
+        print('{}=> '.format(termo), end='')
+        termo += razao
+        cont +=1
+        print('PAUSA')
+        mais = int(input('Quantos termos deseja exibir a mais? (0 para finalizar): '))
+print('Progressão finalizada com {} termos mostrados.'.format(total))

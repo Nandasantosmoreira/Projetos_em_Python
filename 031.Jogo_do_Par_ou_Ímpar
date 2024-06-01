@@ -1,0 +1,38 @@
+#Faça um programa que jogue par ou ímpar com o computador. O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.#
+import random
+acerto=0
+while True:
+    num= [1,2,3,4,5]
+    computador=random.choice(num)
+    print('Computador jogou. Agora é sua vez!')
+    jogador= int(input('Escolha um número de 1 a 5: '))
+    soma= computador + jogador
+    resto = soma % 2
+    jogo = ' '
+    while jogo not in 'PI':
+        jogo = str(input('Escolhe: ÍMPAR ou PAR[P/I]: ')).strip().upper()[0]
+    print(f'Você jogou {jogador} e o computador {computador} e a soma é {soma}.')
+    print('DEU PAR' if resto % 2 == 0 else 'DEU ÍMPAR')
+    if resto % 2 == 0:
+        if jogo == 'P':
+           print('VOCê VENCEU!')
+           acerto += 1
+        else:
+           print('O computador VENCEU!')
+           break  
+    elif resto % 2 == 1:
+        if jogo == 'I':
+            print('Você VENCEU!')
+            acerto += 1
+        else:
+           print('O computador VENCEU!') 
+           break
+    print('Vamos continuar!')    
+print(f'Parabéns! Você teve {acerto} Vitórias consecutivas!')
+
+
+
+
+
+
+
