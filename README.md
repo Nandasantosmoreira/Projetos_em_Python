@@ -1,5 +1,5 @@
-Python é uma linguagem ultra moderna, que agregou muito nos meus conhecimentos em Lógica de Programação. 
-Neste projeto, coloquei alguns dos programas que criei e estou criando. 
+Python é uma linguagem que agregou muito nos meus conhecimentos em Lógica de Programação. 
+Nestes projetos de estudo, coloquei alguns dos programas que criei durante meu aprendizado. 
 O objetivo é apresentar meus conhecimentos e domínio em Estruturas de Repetição (if, else e while e suas usabilidades), estrutura de dados, tuplas, listas,
 dicionários, funções, módulos e tratamento de erros.
 
